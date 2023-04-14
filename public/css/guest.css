@@ -1,0 +1,89 @@
+
+.Message-form {
+    position: relative;
+    top: 2em;
+    
+    padding: 2em;
+    width: 80%;
+    height:80%;
+    box-shadow:0px 10px 50px rgb(143,120,149) ;  
+    border-radius:20px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+  }
+
+.messagebody{
+    margin: 0px;
+    width: 100%;
+    height: 80%;
+    resize: none;
+    font-size: x-large;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(78,41,87,255);
+
+}
+.messagebody:hover{
+  border: 1px solid rgb(217,140,67);
+}
+
+
+.messageForm{
+    width:90%;
+	height:100%;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.messagebody::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  .messagebody::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+  }
+   
+  .messagebody::-webkit-scrollbar-thumb {
+	background: rgba(143,120,149,0.7) ; 
+	border-radius: 10px;
+  }
+  
+  .messagebody::-webkit-scrollbar-thumb:hover {
+	background: rgb(143,120,149) ; 
+  }
+
+
+  #sendMessage{
+    background-color: rgba(78,41,87,255);
+    color:rgb(228,217,232);
+    border: 3px solid rgba(78,41,87,255);
+    width:20%;
+    height:10%;
+    border-radius: 20px;
+    cursor:pointer;
+    font-size: 100%;
+    
+    margin-right: auto;
+    display: inline-block;	
+  }
+
+  #sendMessage:hover {
+    color: rgba(78,41,87,255);
+    background-color:rgb(228,217,232);
+  }
+
+
+  .errorspan{
+    font-size: small;
+    color: rgb(33,123,153);
+    display: none;
+}
+
+.red{
+  background-color: red;
+  opacity: 0.3;
+}

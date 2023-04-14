@@ -1,0 +1,26 @@
+INSERT INTO `Kraken`.`user`(first_name,last_name,password_hash,email,birthdate,role,is_active, phone_number,image_url) VALUES
+("Laith", "Salameh", "456365313","laithsalameh@gmail.com","1999-03-19","admin",2 , "+963-912345678" , 'public\\img\\users\\laith.jpg'),
+("Samara", "Ghrer", "456365313","samaraghrer@gmail.com","1999-08-23","admin",2 , "+963-912345679" , 'public\\img\\users\\samara.jpg') ,
+("Maha", "Karkout", "456365313","mahakarkout@gmail.com","1999-10-20","admin",2 , "+963-912345698" , 'public\\img\\users\\maha.jpg'),
+("Michael", "Scott", "456365313","michaelscott@gmail.com","1970-03-15","teacher",2 , "+963-912345978" , 'public\\img\\users\\michael.png');
+insert into `Kraken`.`teacher`(user_id) select id from `Kraken`.`user` where role='teacher';
+update  `Kraken`.`teacher` set degree = "bma , masters degree" where user_id=4;
+INSERT INTO kraken.subject (name , description, teacher_user_id, max_students, image_url, rating, category, status) 
+        VALUES ("WEB DEVELOPMENT" ,"all you need to learn in wep Apps",4, 20 ,"public/img/subjects/data s.jpg",4,"develpment","accepted");
+
+
+INSERT INTO kraken.subject (name , description, teacher_user_id, max_students, image_url, rating, category, status) 
+        VALUES ("DATA SIENCE" ,"all you need to learn about data science",4, 10,"public/img/subjects/web2-1.jpeg",4,"develpment","accepted");
+
+INSERT INTO kraken.subject (name , description, teacher_user_id, max_students, image_url, rating, category, status) 
+        VALUES ("COMMUNICATION" ,"all you need to learn about communication",4, 10,"public/img/subjects/media.jpg",4,"develpment","accepted");
+
+INSERT INTO kraken.subject (name , description, teacher_user_id, max_students, image_url, rating, category, status) 
+        VALUES ("BUSiNESS SALE" ,"all you need to learn about business",4, 10,"public/img/subjects/sales (1).jpg",4,"develpment","accepted");
+
+INSERT INTO kraken.subject (name , description, teacher_user_id, max_students, image_url, rating, category, status) 
+        VALUES ("HARDWARE" ,"all you need to learn about HARDWARE",4, 10,"public/img/subjects/hardware-1000x500-1.jpg",4,"develpment","accepted");
+
+INSERT INTO kraken.subject (name , description, teacher_user_id, max_students, image_url, rating, category, status) 
+        VALUES ("VIDEO GAMES" ,"all you need to learn about vedio games",4, 10,"public/img/subjects/videogames.jpg",4,"develpment","accepted");
+

@@ -1,0 +1,285 @@
+.subjects .profile_image{
+  position: initial;
+}
+.subjects{
+    width: 90%;
+}
+
+.subjects td{
+    text-align: center;
+}
+
+.subjects tr{
+    min-height: 16vh;
+}
+
+.subjects td:nth-child(1){
+    font-weight: bold;
+    font-size: large;
+}
+.subjects td:nth-child(2), .subjects td:nth-child(3){
+    width: 5vw;
+
+}
+
+.subjects td:nth-child(4){
+    text-align: left;
+    max-width: 12vw;
+
+}
+.subjects td:nth-child(6){
+    width: fit-content;
+}
+
+
+
+.subjects button{
+    margin: 0;
+    width: 40%;
+    margin-right: 0.1vw;
+}
+
+
+
+.subjects ul{
+     list-style-type: none;
+     
+}
+.subjects li{
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    position: relative;
+   
+}
+
+.subjects li img {
+    margin-left: 0.1vw;
+    margin-bottom: 0.1vw;
+}
+.subjects button{
+  background-color:rgba(106,74,113,255);
+  color:rgb(228,217,232);
+  width:60%;
+  margin-top:5px;
+  height:80%;
+  border:none;
+  border-radius: 20px;
+  cursor:pointer;
+  font-size: 100%;
+  padding:2px;
+}
+.popup-img{
+    
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.studentnames {
+    display: none;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 100;
+    bottom: -40px;
+    left: -60px;
+
+}
+
+.show {
+    
+    visibility: visible;
+
+}
+
+.hide {
+    
+    visibility: hidden;
+
+}
+
+.session-time-date{
+    display: flex;
+    flex-direction: column;
+}
+
+.accepted{
+    text-align: center;
+    color:rgb(33,123,153);
+    
+
+  }
+
+  .big{
+      font-size: x-large;
+  }
+
+.rejected{
+    text-align: center;
+    color:red;
+  }
+
+
+  .editCover1{
+    width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.73);
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      z-index: 3;
+      display: none;
+  }
+  
+
+  #editPop1::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  #editPop1::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+  }
+   
+  #editPop1::-webkit-scrollbar-thumb {
+	background: rgba(143,120,149,0.7) ; 
+	border-radius: 10px;
+  }
+  
+  #editPop1::-webkit-scrollbar-thumb:hover {
+	background: rgb(143,120,149) ; 
+  }
+
+  
+  
+  .displayCover1{
+      display: flex;
+  }
+  
+  .hiddenClass1{
+      display: none;	
+  }
+  .Editvisible1{
+      width: 45%;
+      height: 70%;
+      box-shadow:0px 10px 50px rgb(143,120,149) ;  
+      border-radius:20px;
+      background-color:rgb(228,217,232);
+      padding: 20px;
+      position: fixed;
+      top: 15%;
+      left: calc(50vw - 22.5% );
+      display: flex;
+      flex-direction: column;
+      overflow: auto;  
+  }
+.Editvisible2{
+      width: 35%;
+      height: 40%;
+      box-shadow:0px 10px 50px rgb(143,120,149) ;  
+      border-radius:20px;
+      background-color:rgb(228,217,232);
+      padding: 20px;
+      position: fixed;
+      top: 15%;
+      left: calc(50vw - 20% );
+      display: flex;
+      flex-direction: column;
+      overflow: auto;  
+  }
+  
+  .errorspan{
+      font-size: small;
+      color: rgb(33,123,153);
+      display: none;
+  }
+
+
+  
+  #CancelMessage{
+    background-color: rgba(78,41,87,255);
+    color:rgb(228,217,232);
+    border: 3px solid rgba(78,41,87,255);
+    width:20%;
+    height:10%;
+    border-radius: 20px;
+    cursor:pointer;
+    font-size: 100%;
+    
+    margin-right: auto;
+    display: inline-block;	
+  }
+
+  #CancelMessage:hover {
+    color: rgba(78,41,87,255);
+    background-color:rgb(228,217,232);
+  }
+  #Topic-name{
+    bottom: 20%;
+
+  }
+  #addTopic{
+    background-color: rgba(78,41,87,255);
+    color:rgb(228,217,232);
+    border: 3px solid rgba(78,41,87,255);
+    width:25%;
+    height:18%;
+    border-radius: 20px;
+    cursor:pointer;
+    font-size: 100%;
+    margin-right: 5%;
+    margin-left: 20%;
+    margin-top: 50px;
+    top: 15%;
+    display: inline-block;  
+  }
+
+  #addTopic:hover {
+    color: rgba(78,41,87,255);
+    background-color:rgb(228,217,232);
+  }
+  #CancelTopic{
+    background-color: rgba(78,41,87,255);
+    color:rgb(228,217,232);
+    border: 3px solid rgba(78,41,87,255);
+	  border-radius: 20px;
+    width: 25%;
+    padding: 0.9vh;
+	  cursor:pointer;
+    text-decoration: none;
+	  font-size: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;  
+  }
+
+  #CancelTopic:hover {
+    color: rgba(78,41,87,255);
+    background-color:rgb(228,217,232);
+  }
+
+
+  .anchor_as_button{
+    background-color:rgba(106,74,113,255);
+	  color:rgb(228,217,232);
+    padding: 1.5vh;
+	  border: 1px solid rgba(106,74,113,255);
+	  border-radius: 20px;
+	  cursor:pointer;
+	  font-size: 100%;
+    text-decoration: none;
+  }
+  .anchor_as_button:hover{
+    color:rgba(106,74,113,255);
+	  background-color:rgb(228,217,232);
+  }
+
+  .margin-left{
+    margin-left: 5px;
+  }

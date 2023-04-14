@@ -1,0 +1,452 @@
+*{
+	margin : 0;
+	padding:0;
+}
+
+body{
+	margin-top: -10px;
+	
+}
+.parent {
+	height : 102% ;
+	width : 100% ;
+	position: absolute;
+	background-color : rgb(228,217,232);
+	background: linear-gradient(0deg, rgba(221,119,40,0.3200630594034489) 0%, rgba(78,41,87,0.33406866164434523) 100%);
+	
+	background-size:cover;
+	display:flex;
+	flex-wrap:wrap;
+
+}
+#logo-container{
+	height:15%;
+	width:100%;
+	position:relative;
+
+}
+#logo{
+	height:15vh;
+	width:20vw;
+	position:absolute;
+
+	background-image:url(../img/dark11.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+#logo:hover{
+	background-image:url(../img/logoK.png);
+	cursor:pointer;
+}
+img{
+	height: 100%;
+	object-fit: contain;
+	cursor: pointer;
+}
+ 
+.container{
+	position:relative;
+	width:40%;
+	height:85%;
+}
+
+.buttonBox{
+	width: 40%;
+	height: 5%;
+	left:32.5%;
+	padding:2.5%;
+	border-radius:20px;
+	position : relative;
+
+}
+
+.toggleButton{
+	width :50%;
+	padding-top: 6%;
+	padding-bottom: 6%;
+	cursor: pointer;
+	background:transparent;
+	border :0;
+	outline:none;
+	position:relative;
+	border-radius: 30px;
+	color:rgb(78,41,87);
+}
+
+.toggleButton.active{
+	width :50%;
+	padding-top: 6%;
+	padding-bottom: 6%;
+	cursor: pointer;
+	background-color:rgb(221,119,40);
+	color:rgb(228,217,232);
+	border :0;
+	outline:none;
+	position:relative;
+	border-radius: 30px;
+	color:rgb(78,41,87);
+}
+
+#log{
+	position:absolute;
+	left:0;
+
+}
+#sign{
+	position: absolute;
+	right:0;
+}
+.toggleButton:hover{
+	background-color:rgb(78,41,87);
+	color:rgb(228,217,232);
+}
+
+
+
+
+.formBox{
+	width: 70%;
+	height:80%;
+	margin-left: 20%;
+	box-shadow:0px 10px 50px rgb(143,120,149) ;  
+
+	border-radius:20px;
+	position:relative;
+	overflow:scroll;
+	overflow-x:hidden;
+
+}
+
+.formBox.login{
+	overflow-y:hidden;
+}
+
+.formBox::-webkit-scrollbar {
+  width: 10px;
+}
+
+.formBox::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+.formBox::-webkit-scrollbar-thumb {
+  background: rgba(143,120,149,0.7) ; 
+  border-radius: 10px;
+}
+
+.formBox::-webkit-scrollbar-thumb:hover {
+  background: rgb(143,120,149) ; 
+}
+
+
+.image{
+	
+	width:60%;
+	position:relative;
+	background-image:url(../img/join2.png)  , url(../img/idea2.png) ;
+	background-position: left center , 75% 0%;
+
+	background-size:55% , 35%;
+
+	background-repeat: no-repeat;
+
+
+}
+
+@media only screen and (max-width: 700px) {
+ 
+ .parent {
+	height : 200% ;
+	}
+  .container{
+    width: 100%;
+   height:42.5%;
+
+  }
+  .formBox{
+  	margin:auto;
+  }
+  .buttonBox{
+  	left:28%;
+  	  }
+  .image{
+    width: 100%;
+    height: 42.5%;
+  }
+}
+
+.Forms{
+	position:absolute;
+	width:80%;
+	height:100%;
+	left:10%;
+	
+}
+
+.inputField{
+	width:80%;
+	padding:2% 0%;
+	margin-top:10%;
+	margin-left:10%;
+	border-top:0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid rgb(90,56,99);
+	outline:none;
+	background:transparent;
+}
+.checkBox{
+	
+	margin-left:30%;
+	margin-top:10.5%;
+	border-color:rgb(143,120,149);}
+
+
+#rem{
+	color:rgb(90,56,99);
+	position:absolute;
+	font-size:90%;
+	margin-top:10%;
+	margin-left: 2%;
+}
+
+.submitButton{
+	
+	background-color:rgba(78,41,87,255);
+	color:rgb(228,217,232);
+	width:60%;
+	margin-top:10% ;
+	margin-left:20%;
+	margin-bottom: 10%;
+	height:8%;
+	border:none;
+	border-radius: 20px;
+	cursor:pointer;
+	font-size: 100%;
+
+}
+.gen, .role{
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-bottom:5%;
+
+}
+#male , #teacher {
+	margin-left:20%;
+}
+
+#female , #student{
+	margin-left:10%;
+}
+
+#birthdayLabel{
+	margin-left:10%;
+}
+
+.birthday{
+	margin-top:5%;
+	margin-left:10%;
+	outline:none;
+	background:transparent;
+	color:rgb(78,41,87);
+	border-bottom:1px solid rgb(90,56,99) ;
+	border-top:0;
+	border-left:0;
+	border-right:0;
+
+
+}
+
+.ui-datepicker {
+  width: 216px;
+  height: auto;
+  margin: 5px auto 0;
+  font: 9pt Arial, sans-serif;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+  background-color:rgb(228,217,232); 
+  
+}
+
+.ui-datepicker table{
+width: 100%;
+}
+
+.ui-datepicker-header {
+  background-color: rgb(90,56,99);
+  color: rgb(228,217,232);
+  -webkit-box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, 2);
+  -moz-box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, .2);
+  box-shadow: inset 0px 1px 1px 0px rgb(73 46 86);
+  filter: dropshadow(color=#000, offx=1, offy=-1);
+  line-height: 150%;
+  border-width: 1px 0 0 0;
+
+}
+.ui-datepicker-title {
+  text-align: center;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+ background-color: rgb(90,56,99);
+  color: rgb(228,217,232);
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 150%;
+  overflow: hidden;
+  
+}
+
+.ui-datepicker-prev {
+  float: left;
+  background-position: center -30px;
+
+  
+}
+.ui-datepicker-next {
+  float: right;
+  background-position: center 0px;
+
+}
+.ui-datepicker tbody td {
+  padding: 0;
+  border-right: 1px solid #bbb;
+}
+
+.ui-datepicker tbody td:last-child {
+  border-right: 0px;
+}
+.ui-datepicker tbody tr {
+  border: 2px solid #bbb;
+}
+.ui-datepicker tbody tr:last-child {
+  border-bottom: 0px;
+}
+.ui-datepicker td span {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  width: 23px;
+  height: 23px;
+  line-height: 25px;
+  color: rgb(90,56,99);
+  text-decoration: none;
+}
+.ui-datepicker td a {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  width: 23px;
+  height: 23px;
+  line-height: 25px;
+  color: rgb(221,119,40);
+  text-decoration: none;
+}
+body::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+	background: rgba(143,120,149,0.7) ; 
+	border-radius: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+	background: rgb(143,120,149) ; 
+  }
+
+label{
+	color:rgb(78,41,87);
+
+}
+
+
+.showPassword{
+	width:8%;
+	height:5%;
+	right:10%;
+	margin-top:10%;
+	position:absolute;
+	border:none;
+	background-image: url(../img/close.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	cursor: pointer;
+
+}
+
+.showPassword.active{
+	width:8%;
+	height:5%;
+	right:10%;
+	margin-top:10%;
+	position:absolute;
+	border:none;
+	background-image: url(../img/open.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+
+	}
+
+.incorrect{
+	color:red;
+	opacity: 0.7;
+	margin-left:10%;
+
+	}
+.correct{
+	color:rgb(2, 163, 7);
+	margin-left:10%;
+}
+
+.empty{
+	display:none;
+
+}
+#roleVal{
+	color:red;
+	margin-left:auto;
+}
+footer{
+	top: 100%;
+ 	position: sticky;
+ 	height: 15%;
+ 	bottom: 0px;
+ 	width: 100%;
+ 	
+ }
+
+.main-content{
+	display: flex;
+	}
+.main-content .box{
+	flex-basis: 50%;
+	padding: 10px 20px;
+	
+}
+
+.box h2{
+	font-size: 1.125rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: rgb(73,46,86);
+}
+.box .content{
+	margin: 10px 0 0 0;
+	font-size: 1.11rem;
+	color: rgb(73,46,86);
+}
+.left .content p{
+	text-align: justify;
+	color: rgb(73,46,86);
+}

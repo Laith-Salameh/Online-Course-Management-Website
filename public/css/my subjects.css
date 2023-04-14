@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.dropdown{
+  background: url("../img/student-849822_1920.jpg") no-repeat;
+  background-size: cover;
+  right: 200vh;
+  height: 80vh;
+  margin: 0 auto;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+
+ .dropdown .center{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    user-select: none;
+ }
+ .center h1{
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    margin-top: 0%;
+    margin-left: 0%;
+    color: black;  
+    text-shadow: 0 0 5px rgba(191,125,62,0.8);
+    text-align: left;
+ }
+ .center h2{
+    font-size: 50px;
+    font-weight: bold;
+    width: 885px;
+    color: black;  
+    text-shadow: 0 0 5px rgba(191,125,62,0.8); 
+    text-align: left;
+  }
+  .Get-Started{
+  margin-top: 5%;
+  margin-left: 35%;
+  background-color:rgba(78,41,87,0.8);
+  color: black;  
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(191,125,62,0.8);
+  width:20%;
+  padding: 2%;
+  height:10%;
+  border: 3px solid rgba(78,41,87,0.4);
+  border-radius: 20px;
+  cursor:pointer;
+  font-size: 25px;
+  box-shadow:0px 10px 50px rgb(143,120,149) ;
+  text-align: center;
+  }
+
+  .Get-Started:hover{
+    color:rgba(78,41,87,0.8);
+    background-color: rgb(228,217,232) ;  
+  }
+
+  .Get-Started a{
+  color: black; 
+  text-decoration: none;
+}
+  /* discreption--------------------------------------------------------------------------------------*/
+.course-c{
+  padding-top: 50px ;
+  padding-left: 40px;
+  background-size: cover;
+  
+
+}
+.right{
+  float: right;
+  width: 100px;
+  height: 20px;
+}
+.descreption{
+  padding: 50px;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  box-shadow:0px 10px 50px rgb(143,120,149) ;  
+  border-radius:20px;
+  background-color:transparent;
+  /*background-color:rgb(228,217,232);*/
+  width: 60%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+
+}
+.courseteacher{
+  position: relative;
+  top: 5vh;
+}
+
+.photo_{
+  margin-top: 1%;
+  padding: 0;
+  float: left;
+}
+.circle{
+    --x: calc(100vw * 0.15);
+    overflow:hidden;
+      /* position: absolute;
+      left: calc( 50%  - var(--x)/2   );*/
+    
+    height: var(--x);
+    width: var(--x);
+    margin-left: 5%;
+   margin-bottom: 3%;
+    margin-top: -35%;
+    background-color: #bbb;
+    border-radius: 50%;
+    
+
+  }
+
+  .circle img{
+    height:100%;
+    width:100%;
+  }
+
+
+.teacher_information {
+  width:60%;
+  margin-left:25%;
+  margin-top:10%;
+  margin-bottom:5%;
+  font-family: serif;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+ 
+}
+
+#Teacher-name{
+  cursor: pointer;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 100;
+  left: 25%;
+  display: inline-block;
+
+}
+
+#Teacher-name a{
+  text-decoration: none;
+}
+
+.degrees-t{
+   text-align: center;
+ 
+}
+
+/*categories----------------------------------------------------------------------------------------------------*/
+.our-categories{
+  height: auto;
+}
+
+.container-cat h1, .course-c h1, h3{
+  color: rgb(73,46,86); 
+  font-weight: bold;  
+  /*text-shadow: 0 0 5px rgba(191,125,62,0.8);*/
+  text-decoration: none;
+}
+.row{
+  margin-top: 2px;
+}
+.mix{
+  height: 25vh;
+}
+.layout{ 
+ height: 7vh;
+  pointer-events: none; 
+
+}
+
+.subject_image {
+  width: 20%;
+  height: 25vh;
+  cursor:pointer; 
+}

@@ -1,0 +1,151 @@
+body{
+	
+	color:rgba(78,41,87,255);	
+	min-height: 100vh;
+}
+.subjects{
+	padding-top: 100px;
+	width:80%;
+	margin-left:auto ;
+	margin-right: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.subjects label{
+	color:rgba(78,41,87,255);	
+	font-weight: bold;
+	font-size: large;
+	
+}
+.subjects td, .subjects th {
+	padding: 20px;
+}
+
+.subjects tr:nth-child(even){
+   	background-color: #f2f2f2;
+}
+.change_height tr {
+	height: 80px;
+}
+.change_height thead tr{
+	height: 40px !important;
+}
+.subjects ul {
+	  margin-left: 20px;
+}
+
+.anchor_as_button{
+    background-color:rgba(106,74,113,255);
+	color:rgb(228,217,232) !important;
+    padding: 1.5vh;
+	border: 1px solid rgba(106,74,113,255);
+	border-radius: 20px;
+	cursor:pointer;
+	font-size: 100%;
+	width:60%;
+	margin-top:10% ;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: 10%;
+	height:80%;
+    text-decoration: none;
+  }
+  .anchor_as_button:hover{
+    color:rgba(106,74,113,255) !important;
+	  background-color:rgb(228,217,232);
+  }
+
+
+.d_button{
+
+	background-color:rgba(106,74,113,255);
+	color:rgb(228,217,232);
+	width:60%;
+	margin-top:10% ;
+	margin-left:20%;
+	margin-bottom: 10%;
+	height:80%;
+	border:none;
+	border-radius: 20px;
+	cursor:pointer;
+	font-size: 100%;
+	padding:2px;
+
+}
+   .session_suggestion button {
+
+	background-color:rgba(78,41,87,255);
+	color:rgb(228,217,232);
+	width:60%;
+	margin-top:10% ;
+	margin-left:20%;
+	margin-bottom: 10%;
+	height:80%;
+	border:none;
+	border-radius: 20px;
+	cursor:pointer;
+	font-size: 100%;
+}
+
+.session_suggestion button{
+	width: 12vw;
+	margin: 0;
+	height: 5vh;
+}
+
+ .subjects button:hover , .session_suggestion button:hover{
+	background-color:rgb(221,119,40);
+	color:rgb(228,217,232);
+}
+.subjects a{
+	text-decoration: none;
+	color: rgb(78,41,87);
+}
+.subjects a:hover{
+	color:rgb(221,119,40);
+}
+.details{
+	display: none;
+	position: relative;
+}
+
+.details1{
+	width: 30%;
+	height:18%;
+	margin-left:35% ;
+	margin-top: 40%;
+	box-shadow:0px 10px 50px rgb(143,120,149);  
+	border-radius:20px;
+	background-color:rgb(228,217,232);
+	padding: 20px;
+	position: fixed;
+	bottom: -30px;
+	top: -60%;
+	z-index: 999;
+	display: flex;}
+	
+#subject_description{
+	margin:auto;
+}
+#exit{
+	right:0;
+	top:5%;
+	width:8%;
+	height:10%;
+	position :absolute;
+	border:none;
+	background-image: url(../img/exit.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+
+}
+.blurred{
+	width: 100%;
+	height:170%;
+	background-color: rgba(255,255,255,0.2);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left:0;
+	z-index: 3;
+}

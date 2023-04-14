@@ -1,0 +1,82 @@
+.main-profile{
+    float:none;
+    width: 90%;
+    margin-left: 5%;
+}
+.content-main{
+    width:100%;
+}
+.submit-Button{
+    background-color:rgba(78,41,87,255);
+	color:rgb(228,217,232);
+	width:60%;
+	margin-top:5% ;
+	height:30px;
+	border:none;
+	border-radius: 20px;
+	cursor:pointer;
+	font-size: 100%;
+	position:relative;
+}
+.submit-Button:hover{
+    background-color:rgb(221,119,40);
+}
+
+.hiddenClass{
+	visibility: hidden;
+}
+
+
+.unique_form{
+	position:relative;
+	width:100%;
+	align-self:center;
+	align-content:center;
+	background:transparent;
+	
+}
+
+.subjects td:nth-child(1){
+	width:20vh;
+}
+.subjects td:nth-child(2){
+	width:20vh;
+}
+.subjects td:nth-child(3){
+	width:20vh;
+}
+.subjects td:nth-child(4){
+	width:20vh;
+}
+.subjects td:nth-child(5){
+	width:50vh;
+}
+.subjects td:nth-child(6){
+	width:40vh;
+}
+.subjects{
+	width:100%;
+}
+
+
+.input_field{
+	width:80%;
+	padding-left: 2vw;
+	border-top:0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid rgb(90,56,99);
+	outline:none;
+	font-size: 20px;
+	background:transparent;
+	
+	
+}
+
+select{
+	outline:none;
+	background-color:rgb(33,123,153);
+	color:rgb(228,217,232);
+	height:30px;
+	margin-bottom:10px;
+}
